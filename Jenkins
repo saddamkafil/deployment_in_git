@@ -1,0 +1,15 @@
+pipeline
+{
+    agent
+    lable 'slave'
+    stages
+    {
+        stage('Download')
+        {
+            steps
+            {
+                git 'https://github.com/saddamkafil/deployment_in_git.git'
+            }
+        }
+    }
+}
