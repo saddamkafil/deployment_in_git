@@ -26,6 +26,5 @@ pipeline
                     steps{
                      sh'mv /home/ec2-user/workspace/kaja_sweets_proj/webapp/target/webapp.war /home/ec2-user/workspace/kaja_sweets_proj/'}
                 }
-        }
     }
 }
