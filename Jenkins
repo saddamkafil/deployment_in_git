@@ -33,6 +33,7 @@ pipeline
                     steps
                     {
                         sh'sudo docker build -t sadam-image:1.1 .'
+                        sh'sudo docker kill -f sadam-container'
                         sh'sudo docker run --name sadam-container -itd --rm -p 8080:8080 sadam-image:1.1'
                         sh'sudo docker ps -a'
                     }
