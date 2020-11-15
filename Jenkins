@@ -20,6 +20,7 @@ pipeline
                   sh "${mvnhome}/bin/mvn clean package"
                 }
                 }
+        }
                 stage('move war file to docker container')
                 {
                     steps{
