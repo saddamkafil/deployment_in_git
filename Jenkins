@@ -28,5 +28,12 @@ pipeline
                      sh'ls -l'
                      }
                 }
+                stage('docker build')
+                {
+                    steps
+                    {
+                        sh
+                    }
+                }
     }
 }
