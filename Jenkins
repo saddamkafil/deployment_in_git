@@ -12,6 +12,7 @@ pipeline
             }
         }
         stage('build')
+        {
         steps{
                 script {
                   def mvnhome = tool name: 'M2_HOME', type: 'maven'
@@ -19,5 +20,6 @@ pipeline
                   sh "${mvnhome}/bin/mvn clean package"
                 }
                 }
+        }
     }
 }
