@@ -28,6 +28,7 @@ pipeline
                 stage('move war file to docker container')
                 {
                     steps{
+                     sh'pwd'
                      sh'mv /home/ec2-user/workspace/kaja_sweets_proj/webapp/target/webapp.war /home/ec2-user/workspace/kaja_sweets_proj/'
                      sh'ls -l'
                      }
